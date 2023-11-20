@@ -26,7 +26,6 @@ function loadExperience(){
     aboutMeNav.classList.remove("active");
     experienceNav.classList.add("active");
     collapseNavbar();
-
 }
 
 function collapseNavbar(){
