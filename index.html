@@ -12,42 +12,30 @@
 
     <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-light">
-            <div class="container">
-
-
-                <h3>Paul Dudrey</h3>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link" onclick="loadAboutMe();">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" onclick="loadExperience();">Experience</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">Interests</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li> -->
-
-                    </ul>
-                </div>
+    <header class="fixed-top bg-white">
+        <div class="container">
+        <nav class="navbar navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Paul Dudrey</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a id="aboutMeNav" class="nav-link active" aria-current="page" href="#" onclick="loadAboutMe();">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="experienceNav" class="nav-link" href="#" onclick="loadExperience();">Experience</a>
+                  </li>
+              </div>
             </div>
-        </nav>
+          </nav>
+        </div>
     </header>
 
     <div class="container pt-5">
 
-        <h4 id="pageHeading" class="text-center pb-3">About Me</h4>
 
         <div class="text-center">
             
@@ -72,10 +60,10 @@
         <div id="mainContent">
 
             <div id="aboutMe">
-                <p>I'm a software engineering leader, musician, and builder of things, equally at home casting vision at the executive level and engaging in the hard, detailed, day-in and day-out work to bring products to market." 
-                <br><br>Most recently, I led the software engineering team at ZoomCare as Director of Engineering, modernizing and rebuilding a full suite of internal and B2B/B2C applications including an proprietary EMR and the site and apps at <a href="https://www.zoomcare.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">zoomcare.com</a>."
-                <br><br>Prior to that I worked for CorVel Corporation, starting as a junior QA Engineer and leaving as a Director, having built QA test automation and Release Engineering teams, re-defined the QA team and processes, and contributed to hundreds of releases of our Bill Review, Claims Management, and Case Management applications."
-                <br><br>Whether it's finding a way to decompose a legacy monolithic backend into modern RESTful APIs without any interruption to service (we did that at ZoomCare), building a custom automation framework (the one we built at CorVel is still one of the coolest tools I've used for E2E testing), or shepherding / obsessing a people-first culture (because <i>what</i> we get done matters for this year's deliverables, but <i>how</i> we get it done matters for the next 10 years of deliverables) I bring energy, excitement, and an infectious roll-up-your-sleeves-and-get-stuff-done attitude to the teams I work with."
+                <p>I'm a software engineering leader, musician, and builder of things, equally at home casting vision at the executive level and engaging in the hard, detailed, day-in and day-out work to bring products to market.
+                <br><br>Most recently, I led the software engineering team at ZoomCare as Director of Engineering, modernizing and rebuilding a full suite of internal and B2B/B2C applications including an proprietary EMR and the site and apps at <a href="https://www.zoomcare.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">zoomcare.com</a>.
+                <br><br>Prior to that I worked for CorVel Corporation, starting as a junior QA Engineer and leaving as a Director, having built QA test automation and Release Engineering teams, re-defined the QA team and processes, and contributed to hundreds of releases of our Bill Review, Claims Management, and Case Management applications.
+                <br><br>Whether it's finding a way to decompose a legacy monolithic backend into modern RESTful APIs without any interruption to service (we did that at ZoomCare), building a custom automation framework (the one we built at CorVel is still one of the coolest tools I've used for E2E testing), or shepherding / obsessing a people-first culture (because <i>what</i> we get done matters for this year's deliverables, but <i>how</i> we get it done matters for the next 10 years of deliverables) I bring energy, excitement, and an infectious roll-up-your-sleeves-and-get-stuff-done attitude to the teams I work with.
                 <br><br>I'm known as a servant leader, first in the charge and last in the retreat, pushing us to constantly improve and tackle the next problem - because every problem is, in fact, solvable.</p>
             </div>
 
@@ -261,16 +249,6 @@
                             </div>
                         </div>
                         
-<!--     
-                        <div class="row ps-3">
-                            <div class="col-12">
-                                <ul>
-                                    
-                                    <li>#</li>
-                                </ul>
-                            </div>
-                        </div> -->
-
                 </div>
 
 
