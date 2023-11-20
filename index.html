@@ -11,69 +11,282 @@
     </head>
 
     <body>
-    <div class="container pt-5">
-        <div class="row ">
-            <div class="sidebar col-xl-2 col-md-4">
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container">
+
+
                 <h3>Paul Dudrey</h3>
 
-                <div>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">About me</a></li>
-                        <li><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Experience</a></li>
-                        <li><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Interests</a></li>
-                        <li><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Contact</a></li>
-               
-                      </ul>
-                    
-                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link" onclick="loadAboutMe();">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" onclick="loadExperience();">Experience</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Interests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li> -->
+
+                    </ul>
+                </div>
             </div>
-            <div class="col-xl-10 col-md-8">
-                <h4 class="text-center display-4 pb-3">About Me</h4>
+        </nav>
+    </header>
 
-                <div class="text-center">
-                    
-                        <img src="images/pauldudreyprofile.png" width="300px" class="img-fluid rounded-circle border border-3 border-dark" alt="Paul Dudrey profile picture">
-                    
-                </div>
+    <div class="container pt-5">
 
-                <h3 class="text-center display-4 pt-3">Software Engineering Leader</h3>
+        <h4 id="pageHeading" class="text-center pb-3">About Me</h4>
 
-                <div class="row pt-3">
-                    <div class="col-lg-4">
-                        <p class="text-center lead">simplicity out of complexity</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p class="text-center lead">order out of chaos</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p class="text-center lead">clarity out of confusion</p>
-                    </div>
-                </div>
-                
-                <div id="mainContent">
-                    <p>I'm a software engineering leader, musician, and builder of things, equally at home casting vision at the executive level and engaging in the hard, detailed, day-in and day-out work to bring products to market.
-                        <br><br>Most recently, I led the software engineering team at ZoomCare as Director of Engineering, modernizing and rebuilding a full suite of internal and B2B/B2C applications including an proprietary EMR and the site and apps at <a href="https://www.zoomcare.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">zoomcare.com</a>.
-                        
-                        <br><br>Prior to that I worked for CorVel Corporation, starting as a junior QA Engineer and leaving as a Director, having built QA test automation and Release Engineering teams, re-defined the QA team and processes, and contributed to hundreds of releases of our Bill Review, Claims Management, and Case Management applications.
-                        
-                        <br><br>Whether it's finding a way to decompose a legacy monolithic backend into modern RESTful APIs without any interruption to service (we did that at ZoomCare), building a custom automation framework (the one we built at CorVel is still one of the coolest tools I've used for E2E testing), or shepherding / obsessing a people-first culture (because <i>what</i> we get done matters for this year's deliverables, but <i>how</i> we get it done matters for the next 10 years of deliverables) I bring energy, excitement, and an infectious roll-up-your-sleeves-and-get-stuff-done attitude to the teams I work with.
-                        <br><br>I'm known as a servant leader, first in the charge and last in the retreat, pushing us to constantly improve and tackle the next problem - because every problem is, in fact, solvable.
-                        </p>
+        <div class="text-center">
+            
+            <img src="images/pauldudreyprofile.png" width="300px" class="img-fluid rounded-circle border border-3 border-dark" alt="Paul Dudrey profile picture">
+            
+        </div>
 
+        <h4 id="pageSubHeading" class="text-center display-5 pt-3">Software Engineering Leader</h4>
 
-
-                </div>
-
-        
+        <div id="pageTagline" class="row pt-3">
+            <div class="col-lg-4">
+                <p class="text-center lead tagline">simplicity out of complexity</p>
+            </div>
+            <div class="col-lg-4">
+                <p class="text-center lead tagline">order out of chaos</p>
+            </div>
+            <div class="col-lg-4">
+                <p class="text-center lead tagline">clarity out of confusion</p>
             </div>
         </div>
-            
+        
+        <div id="mainContent">
 
+            <div id="aboutMe">
+                <p>I'm a software engineering leader, musician, and builder of things, equally at home casting vision at the executive level and engaging in the hard, detailed, day-in and day-out work to bring products to market." 
+                <br><br>Most recently, I led the software engineering team at ZoomCare as Director of Engineering, modernizing and rebuilding a full suite of internal and B2B/B2C applications including an proprietary EMR and the site and apps at <a href="https://www.zoomcare.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">zoomcare.com</a>."
+                <br><br>Prior to that I worked for CorVel Corporation, starting as a junior QA Engineer and leaving as a Director, having built QA test automation and Release Engineering teams, re-defined the QA team and processes, and contributed to hundreds of releases of our Bill Review, Claims Management, and Case Management applications."
+                <br><br>Whether it's finding a way to decompose a legacy monolithic backend into modern RESTful APIs without any interruption to service (we did that at ZoomCare), building a custom automation framework (the one we built at CorVel is still one of the coolest tools I've used for E2E testing), or shepherding / obsessing a people-first culture (because <i>what</i> we get done matters for this year's deliverables, but <i>how</i> we get it done matters for the next 10 years of deliverables) I bring energy, excitement, and an infectious roll-up-your-sleeves-and-get-stuff-done attitude to the teams I work with."
+                <br><br>I'm known as a servant leader, first in the charge and last in the retreat, pushing us to constantly improve and tackle the next problem - because every problem is, in fact, solvable.</p>
+            </div>
+
+            <div id="experience" class="d-none">
+
+                <div id="zoomcareExperience">
+
+                    <div class="row">
+                        <div class="col-lg-1 text-start">
+                            <img src="images/zoomcarelogo.png" width="40px" class="img-fluid rounded-circle border border-1 border-dark" alt="ZoomCare Logo">
+                        </div>
+    
+                        <div class="col-lg-6 text-lg-start">
+                            <h2>ZoomCare</h2>
+                        </div>
+    
+                        <div class="col-lg-5 text-lg-end text-secondary">
+                            <h5>4 years</h5>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="border-start border-3">
+                        <p class="lead ps-3">I helped to build an engineering department from the ground up, establishing all processes and best practices needed to run a mature and predicatable software delivery program.  
+                            Our teams delivered multiple software products, including a new patient record management backend, a lift-and-shift of a legacy monolith into a new spring boot RESTful API, online bill pay solutions, video and chat chare platforms, 
+                            and a complete rebuild of <a href="https://www.zoomcare.com/" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">zoomcare.com</a> from vue.js to React Native.</p>
+    
+                        <div class="row ps-3 d-flex align-items-baseline">
+                            <div class="col-lg-6 text-lg-start">
+                                <h4>Director of Engineering</h4>
+                            </div>
+    
+                            <div class="col-lg-6 text-lg-end text-secondary">
+                                <h5>Mar 2022 - Oct 2023</h5>
+                            </div>
+                        </div>
+                        
+    
+                        <div class="row ps-3">
+                            <div class="col-12">
+                                <ul>
+                                    <li>Led a team of three managers and four senior level individual contributors supervising a hierarchy of 60. Worked with other Engineering Leaders to design systems to scale the department and implement best practices for team intake, prioritization, innovation, delivery, and accountability. Provided individual mentorship and department level goal setting.</li>
+                                    <li>Managed a product portfolio of seven applications. Established a strategic and technical roadmap for a complete rebuild of all backends and frontends of ZoomCare's proprietary Electronic Health Record (EHR) system, decomposing a legacy monolith into a microservice architecture with a microfrontend orchestrator.</li>
+                                    <li>In partnership with the Enterprise Architecture team, established a feature-flagged event-driven architecture and a legacy mimic pattern to roll features out incrementally with zero impact to the 600 healthcare providers and associates providing care to over a thousand patients a day, allowing for prototyping and rapid iteration with reliability.</li>
+                                    <li>Partnered with Product and executive leadership to lead product development: delivered multiple product launches, including a new patient record management backend, Electronic Health Record (EHR) core backend refactors, online bill pay solutions. Developed and delivered FHIR and HL7 integrations between our EHR and third-party systems for Revenue Cycle Management (RCM), payment management, and Health Information Exchanges (HIE).</li>
+                                    <li>Managed an annual budget of $12 million to recruit, hire, and train the teams necessary to deliver on our priorities. Oversaw the 3x growth of the engineering department to 120 fully-remote engineers distributed across four continents, maintaining an 8.8/10 e-NPS score and 1% turnover.</li>
+                                    <li>Planned, created and implemented production incident management and support teams, workflows to improve systems reliability. Implemented incident response tools, KPIs, and SLAs, driving system uptime from 97% up to 99.9%, and 75% decrease in Mean Time to Resolution (MTTR).</li>
+                                    <li>Collaborated across the organization as a technical service partner to align roadmaps, compliance needs, and technical requirements to business gaps and operational strategy. Researched industry trends and evaluated vendor capabilities for build vs. buy decisions.</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="row ps-3 d-flex align-items-baseline">
+                            <div class="col-lg-6 text-lg-start">
+                                <h4>Senior Engineering Manager</h4>
+                            </div>
+    
+                            <div class="col-lg-6 text-lg-end text-secondary">
+                                <h5>Sep 2020 - Mar 2022</h5>
+                            </div>
+                        </div>
+    
+                        <div class="row ps-3">
+                            <div class="col-12">
+                                <ul>
+                                    <li>Led product development: delivered multiple software projects in alignment with product strategy, including new features to proprietary EHR systems, patient portals for scheduling, video and chat care platforms, and various B2B integrations with vendors for Lab Information Systems, ePrescribe, and Salesforce Marketing Cloud, as well as a complete refactor of our customer facing website and mobile applications into react.js, and all existing shared services into Spring.</li>
+                                    <li>Worked with Compliance and Security teams to identify gaps and close them, including improvements to logging, developing electronic Consent to Care systems, data integrity, and endpoint security.</li>
+                                    <li>Led the production systems design for a transition to a fully automated, infrastructure-as-code, containerized cloud infrastructure in AWS ECS, allowing continuous integration and deployment (CI/CD) of code, driving stability and scalability in our platforms.</li>
+    
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="row ps-3 d-flex align-items-baseline">
+                            <div class="col-lg-6 text-lg-start">
+                                <h4>Senior QA Manager</h4>
+                            </div>
+    
+                            <div class="col-lg-6 text-lg-end text-secondary">
+                                <h5>Jan 2020 - Sep 2020</h5>
+                            </div>
+                        </div>
+    
+                        <div class="row ps-3">
+                            <div class="col-12">
+                                <ul>
+                                    <li>Led the creation of a quality engineering practice, exploring and implementing new tools for test automation and management and delivering 100% documented test coverage, automated tests covering all mission critical functionality.</li>
+                                    <li>Scaled the engineering organization from seven to forty; supported rapid growth of ZoomCare's clinic footprint, opening 26 new clinics in 2020.</li>
+                                    <li>Defined and documented Software Development Life Cycle (SDLC), Change Management, and Release Management processes, achieving SOC-2 accreditation.</li>
+                                    <li>Worked with other engineering leaders in implementing Scaled Agile (SAFe) for agile development, including systems to align vision across the organization, prioritize work and track progress, leading to a committed vs. complete rate of 99% delivery against product roadmaps.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div id="corvelExperience">
+                    <div class="row">
+                        <div class="col"><p><br></p></div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-lg-1 text-start">
+                            <img src="images/corvellogo.png" width="40px" class="img-fluid rounded-circle border border-1 border-dark" alt="CorVel Logo">
+                        </div>
+    
+                        <div class="col-lg-6 text-lg-start">
+                            <h2>CorVel Corporation</h2>
+                        </div>
+    
+                        <div class="col-lg-5 text-lg-end text-secondary">
+                            <h5>9 years</h5>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="border-start border-3">
+                        <p class="lead ps-3">I led Quality Engineering, Test Automation, and Release Engineering teams responsible for all build, release, and testing activities supporting 100 engineers developing proprietary Bill Review, Claims Management and Case Management applications for internal and SaaS use. </p>
+    
+                        <div class="row ps-3 d-flex align-items-baseline">
+                            <div class="col-lg-6 text-lg-start">
+                                <h4>Director, Information Systems</h4>
+                            </div>
+    
+                            <div class="col-lg-6 text-lg-end text-secondary">
+                                <h5>Sept 2010 - Dec 2019</h5>
+                            </div>
+                        </div>
+                        
+    
+                        <div class="row ps-3">
+                            <div class="col-12">
+                                <ul>
+                                    
+                                    <li>Led process analysis to identify and remove waste and friction in the SDLC, resulting in increased velocity and an annual savings of $270,000 identified in the first 3 months of my leadership.</li>
+                                    <li>Moved organization from monthly to continuous releases, shortening our mean time to value and reducing friction in the pipeline, increasing velocity by 50% in 6 months.</li>
+                                    <li>Drove improvements and automation to Change Management processes, increasing accuracy of change control reporting while reducing human interaction. Maintained SOC-2 compliance</li>
+                                    <li>Trained, mentored, and promoted new leaders including QA Manager, DevOps Team Lead, and Test Automation Team Lead.</li>
+                                    <li>Architected and directly participated in development of an in-house automation framework using Selenium, C#, and SQL. Automated 80% of the mission-critical system functionality and post-deployment verification.</li>
+                                    <li>Shifted QA Engineers from manual, black-box, waterfall-style testing to an agile, embedded QA approach, implementing Azure DevOps testing tools and testing best practices.</li>
+                                    <li>Successfully changed the culture of the QA team from an “us and them” to a “we” culture</li>    
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+
+                <div id="fiservExperience">
+                    <div class="row">
+                        <div class="col"><p><br></p></div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-lg-1 text-start">
+                            <img src="images/fiservlogo.png" width="40px" class="img-fluid rounded-circle border border-1 border-dark" alt="Fiserv Logo">
+                        </div>
+    
+                        <div class="col-lg-6 text-lg-start">
+                            <h2>Fiserv, Inc.</h2>
+                        </div>
+    
+                        <div class="col-lg-5 text-lg-end text-secondary">
+                            <h5>3 years</h5>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="border-start border-3">
+                        <p class="lead ps-3">Tested banking software, including checking, savings, loan, and end of year reporting.</p>
+    
+                        <div class="row ps-3 d-flex align-items-baseline">
+                            <div class="col-lg-6 text-lg-start">
+                                <h4>Quality Assurance Engineer</h4>
+                            </div>
+    
+                            <div class="col-lg-6 text-lg-end text-secondary">
+                                <h5>Oct 2007 - Aug 2009</h5>
+                            </div>
+                        </div>
+                        
+<!--     
+                        <div class="row ps-3">
+                            <div class="col-12">
+                                <ul>
+                                    
+                                    <li>#</li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col"><p><br></p></div>
+                </div>
+
+
+            </div>
+        </div>
+           
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/content.js"></script>
     </body>
 
 </html>

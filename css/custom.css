@@ -1,5 +1,12 @@
-.lead{
+.tagline{
     color: #05b7f7;
 }
 
 
+body { 
+    padding-top: 40px; 
+}
+
+.bg-test{
+    background-color: #fff;
+}
