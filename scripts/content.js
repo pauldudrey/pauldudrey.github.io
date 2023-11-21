@@ -4,12 +4,14 @@ let pageSubHeading = document.getElementById('pageSubHeading');
 let pageTagline = document.getElementById('pageTagline');
 let aboutMeNav = document.getElementById("aboutMeNav");
 let experienceNav = document.getElementById("experienceNav");
+let pagePhoto = document.getElementById("pagePhoto");
 
 
 
 function loadAboutMe(){ 
     experience.classList.add("d-none");
     aboutMe.classList.remove("d-none");
+    pagePhoto.classList.remove("d-none");
     pageSubHeading.innerText = "Software Engineering Leader";
     pageTagline.classList.remove("d-none");
     experienceNav.classList.remove("active");
@@ -21,6 +23,7 @@ function loadAboutMe(){
 function loadExperience(){
     aboutMe.classList.add("d-none");
     experience.classList.remove("d-none");
+    pagePhoto.classList.add("d-none");
     pageSubHeading.innerText = "Work History";
     pageTagline.classList.add("d-none");
     aboutMeNav.classList.remove("active");
